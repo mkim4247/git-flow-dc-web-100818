@@ -21,7 +21,7 @@ describe "GIT" do
 
   it "4. What command allows you to add all previously all tracked, modified files
       and create a message, 'add img to index' for the commit in one command?" do
-    answer = ""
+    answer = "git commit -am 'add img to index'"
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -30,7 +30,7 @@ describe "GIT" do
 # describe "PUSHING:" do
   it "5. From the master branch, what is the syntax for pushing the master branch 
       to the remote master branch where the remote is called 'origin'?" do
-    answer = "?"
+    answer = "push origin master"
     encoded_answer = "6c8e01a0360da3cf6e314c69c453957b70ab1b4e"
     expect(encode(answer)).to eq(encoded_answer)
   end
